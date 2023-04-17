@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Activity1  
+{  
+static Scanner scan = new Scanner(System.in);
+public static void main(String args[])   
+{
+
+   int F = 0; int S = 1;
+  
+    System.out.print("Enter a number : ");
+    int n = scan.nextInt();
+
+    for (int i = 1; i <= n; ++i) {
+    System.out.print(F + ", ");
+
+    int Nt = F + S;
+    F = S;
+    S = Nt;
+
+    }
+  }
+
+}
